@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f4f5f5;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+
+nav{
+    margin-left: auto;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(2, 167, 218);
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: rgb(2, 167, 218);
+    color: white;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none; 
+ }
+
+ header label{
+    font-size: 20px;
+    color: rgb(2, 167, 218);
+    cursor: pointer;
+    display: none;
+}
+
+.cart{
+    display: flex;
+    margin-left: 5px;
+    z-index: 2;
+}
+
+/*--Credenziali--*/
+
+.credenziali{
+    margin-top: 15vh;
+    padding-left: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: white;
+    background-color: rgb(67, 201, 241);
+}
+
+/*--Dettagli account--*/
+
+.dettagli-account{
+    background-color: white;
+    padding: 6vh;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-top: 10vh;
+    width: 40%;
+}
+
+.dettagli-account h1{
+    padding-bottom: 1vh;
+    border-bottom: 1px solid rgb(0, 0, 0) ;
+}
+
+input{
+    margin-left: 2.5%;
+    margin-top: 5vh;
+    width: 45%;
+    height: 5vh;
+}
+
+/*--Sezione indirizzo--*/
+
+.sezione-indirizzo p{
+    margin-top: 1vh;
+}
+
+.cap{
+    color: grey;
+}
+
+/*--Sezione Plus--*/
+
+.sezione-plus{
+    margin-bottom: 2vh;
+}
+
+.sezione-plus a{
+    color: black;
+    display: block;
+    margin-top: 2vh;
+    text-decoration: underline;
+}
+
+/*--Footer--*/
+
+footer{
+    background: rgba(68, 187, 223, 0.274);
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.info-section ul{
+    list-style-type: none;
+}
+
+.info-section li{
+    margin-top: 2vh;
+}
+
+@media(max-width:991px){
+
+    /*--Header--*/
+
+    header{
+        padding:20px;
+    }
+
+    header .logo{
+        margin-right: auto;
+    }
+
+    header label{
+        display: initial;
+    }
+    
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+       position: relative; 
+       width: 100%;
+    }
+
+    header .navbar ul li ul li{
+       background: #eee;
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    
+    /*--Credenziali--*/
+
+    .credenziali{
+        padding-left: 5%;
+    }
+
+    /*--Sezioni--*/
+
+    .dettagli-account{
+        width: 98%;
+        margin-left: 1%;
+    }
+
+     /*--Footer--*/
+     footer{
+        margin-top: 20vh;
+        flex-direction: column;
+    }
+    .logo-section{
+        width: 100%;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        align-items: center;
+    }
+}

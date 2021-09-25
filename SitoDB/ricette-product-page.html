@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Ordina Prodotti DistrictBox</title>
+    <link rel="stylesheet" href="style-10.css">
+</head>
+<body>
+    <header>
+        <a href="utent-home.html"><img src="logo-icon.jpg" width="250px"></a>
+        <!--Menu-->
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <!--<li><a href="#">Registrati</a></li>-->
+                <!--<li><a href="#" id="Località-button">Località</a></li>-->
+                <li><a href="account-section.html">Account</a></li>
+                <li><a href="order-page.html">Ordina +</a>
+                    <ul>
+                        <li><a href="ricette-page.html">Ricette</a></li>
+                        <li><a href="mistery-page.html">Mistery box</a></li>
+                        <li><a href="product-category.html">Prodotti</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+           
+        </nav>
+        <a class="cart" href="cart-page.html"><img src="cart-icon.svg" width="20px"></a>
+    </header>
+
+    <div class="content-page">
+        <div class="content-container">
+            <div class="img-container"><img src="pane-img.jpg" width="120px"></div>
+            <div class="text-container">
+                <h3 class="title">Pane multisemi bio semi-integrale 250 gr</h3>
+                <h3 class="price">€ 2,30</h3>
+                <div class="add-cart"><a href="#">Aggiungi al carrello</a></div>
+                <div class="produttore-link"><a href="#" id="info-produttore">Produttore: Healty-Farm</a></div>
+                <div class="product-description">Pagnotta da 250g con farine biologiche macinate a pietra e semi (girasole, sesamo, lino, zucca, papavero), pasta madre e sale marino integrale. La lenta lievitazione lo rende molto digeribile, migliora le sue proprietà organolettiche e la sua conservabilità.</div>
+                
+                <div class="ingredient-lyst">
+                    <h3 class="allergeni">Prodotti</h3>
+                    <div class="lyst-container">
+                        <input type="checkbox" id="prodotto1" name="prodotto1" value="Uova">
+                        <label for="prodotto1">Uova</label>
+                        <input type="checkbox" id="prodotto2" name="prodotto2" value="Pecorino">
+                        <label for="prodotto2">Pecorino</label>
+                        <input type="checkbox" id="prodotto3" name="prodotto3" value="Guanciale">
+                        <label for="prodotto3">Guanciale</label>
+                    </div>
+                </div>
+                
+
+                <h3 class="allergeni">Allergeni</h3>
+                <ul>
+                    <li>Glutine</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Location popup-->
+    <div class="popup-modal">
+        <div class="modal-content">
+         <div class="close">+</div>     
+         <img class="form-icon" src="info-icon.svg" height="80px" width="80px">
+         <h4>Contatta</h4>
+         <p>E-mail: Healty-farm@gmail.com</p>
+         <p>Chiama: +39 123 345 6789</p>
+         <div class="icon-container">
+             <ul>
+                 <li><img class="instagram-icon" src="instagram-icon.svg" alt=""></li>
+             </ul>
+         </div>
+        </div> 
+     </div>
+
+     <script src="app-2.js"></script>
+</body>

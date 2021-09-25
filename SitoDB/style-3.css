@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+}
+
+.access-form{
+    height: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form-container{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-container{
+    margin-top: 4vh;
+}
+
+.conferm-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-button{
+    margin-top: 7vh;
+    margin-left: 45%;
+}
+
+h1{
+    font-size: 4.5vh;
+    font-weight: lighter;
+}
+
+.text-form-container{
+    margin-top: 4vh;
+}
+
+.text-form-container p{
+    margin-bottom: 2vh;
+}
+
+form{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    font-size: 2.3vh;
+}
+
+.form-input{
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 3vh;
+}
+
+.modal-button{
+    color: white;
+    background: rgb(2, 167, 218);
+    font-size: 3vh;
+    padding: 2vh;
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+}
+
+footer{
+    height: 7%;
+    color: black;
+    background: rgba(68, 187, 223, 0.274);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
